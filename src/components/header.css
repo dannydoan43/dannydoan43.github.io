@@ -34,14 +34,17 @@ html {
 .contentp1 {
     color: lightseagreen;
     font-size: .75em;
+    font-weight:300;
 }
 .contentp2 {
     padding-top:4%;
     font-size: 1.5em;
+    font-weight:300;
 }
 .contentp3 {
     padding-top: 4%;
     color:gray;
+    font-weight:300;
 }
 .mypic {
     height:250px;
