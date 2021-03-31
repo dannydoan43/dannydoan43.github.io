@@ -5,17 +5,20 @@
   <link rel="stylesheet" href="./src/components/header.css">
   <link rel="stylesheet" href="./src/components/projects.css">
   <link rel="stylesheet" href="./src/components/resume.css">
-  <script src="./src/index.js" type="text/javascript"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="https://unpkg.com/browse/react-reveal@1.2.2" ></script>
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="./src/components/hahawhat.js"></script>
 </head>
 <header id="home">
-  <script>index.js</script>
   <header class="App-header">
     <div class="context">
 
       <ul class="headerright">
         <li class="helpme"><a class="smoothscroll rmunder" href="mailto:dannydoan43@gmail.com">Contact</a></li>
         <li class="helpme"><a href="#about" class="rmunder">About Me</a></li>
-        <li class="helpme"><a href="DannyDoan_Resume.pdf" target="_blank" class="button1">Résumé</a></li>
+        <li class="helpme"><a href="./public/DannyDoan_Resume.pdf" target="_blank" class="button1">Résumé</a></li>
         <li class="helpme"><a href="#portfolio" class="rmunder">Projects</a></li>
       </ul>
     </div>
@@ -43,7 +46,7 @@
 
 <header id="home">
   <section id="about">
-    <div>
+    <div class="hello">
       <h1 class="left">About Me</h1>
       <p class="left">
         I graduated from the University of Texas at San Antonio with a B.S. in Computer Science concentrating in Cyber Security. Currently, I am looking to join a team to put my skills into good use and solve real world problems.
@@ -51,13 +54,15 @@
       <hr />
 
     </div>
+    <script>ScrollReveal().reveal('.hello')</script>
+
   </section>
 </header>
 
 <header id="home">
   <section id="resume" class="s-resume target-section">
     <h1 class="left">Career</h1>
-    <div>
+    <div class="hi">
       <table class="centeredu">
         <tr><td><h4>UTSA CS Department</h4></td></tr>
         <tr><td>Computer Science Tutor - Janurary 2019 to May 2019 </td></tr>
@@ -66,8 +71,10 @@
         </tr>
       </table>
     </div>
+    <script>ScrollReveal().reveal('.hi')</script>
+
     <br></br>
-    <div>
+    <div class="yo">
       <table class="centeredu">
         <tr><td><h4>Kung Fu Tea</h4></td></tr>
         <tr><td>BoH/Barista - June 2018 to March 2020</td></tr>
@@ -76,9 +83,11 @@
         </tr>
       </table>
     </div>
+    <script>ScrollReveal().reveal('.yo')</script>
+
     <br/>
     <h1 class="left">Education</h1>
-    <div class="">
+    <div class="ha">
       <table class="centeredu">
         <tr class="">
           <td><h4 class="edupadding">University of Texas at San Antonio</h4></td>
@@ -92,6 +101,8 @@
         </tr>
       </table>
     </div>
+    <script>ScrollReveal().reveal('.ha')</script>
+
     <br/>
 
   </section>
@@ -99,11 +110,13 @@
 </header>
 
 <header id="portfolio" class="">
-<div>
+<div class="need">
   <h1 class="left">Projects</h1>
 </div>
-<br></br>
-<div>
+  <script>ScrollReveal().reveal('.need')</script>
+
+  <br></br>
+<div id="hahawhat">
   <table class="toolsused">
     <tr >
       <td><img class="pic1" src="./public/potty.png" alt="shit is broken"/></td>
