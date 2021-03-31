@@ -5,12 +5,20 @@
   <link rel="stylesheet" href="./src/components/header.css">
   <link rel="stylesheet" href="./src/components/projects.css">
   <link rel="stylesheet" href="./src/components/resume.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="https://unpkg.com/browse/react-reveal@1.2.2" ></script>
-  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-  <script src="./src/components/hahawhat.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+      width: 30%;
+      margin: auto;
+    }
+  </style>
 </head>
+<body>
 <header id="home">
   <header class="App-header">
     <div class="context">
@@ -26,7 +34,7 @@
       <img class="mypic" src="./public/circle-cropped.png" alt="shit is broken"/>
       <h2 class="contentp1"> Hey! My name is </h2>
       <h3 class="contentp2"> Danny Doan </h3>
-      <h1 class="contentp3"> Software Developer</h1>
+      <h1 class="contentp3"> Junior Developer</h1>
     </div>
 
   </header>
@@ -64,7 +72,7 @@
     <h1 class="left">Career</h1>
     <div class="hi">
       <table class="centeredu">
-        <tr><td><h4>UTSA CS Department</h4></td></tr>
+        <tr><td><h4><b>UTSA CS Department</b></h4></td></tr>
         <tr><td>Computer Science Tutor - Janurary 2019 to May 2019 </td></tr>
         <tr>
           <td>Aided students on their assignments in a one-on-one situation.</td>
@@ -76,7 +84,7 @@
     <br></br>
     <div class="yo">
       <table class="centeredu">
-        <tr><td><h4>Kung Fu Tea</h4></td></tr>
+        <tr><td><h4><b>Kung Fu Tea</b></h4></td></tr>
         <tr><td>BoH/Barista - June 2018 to March 2020</td></tr>
         <tr>
           <td>Managed time properly to ensure products are kept fresh, also to attend to customers in a prompt and friendly manner.</td>
@@ -88,15 +96,16 @@
     <br/>
     <h1 class="left">Education</h1>
     <div class="ha">
-      <table class="centeredu">
+      <table class="centeredu"">
         <tr class="">
-          <td><h4 class="edupadding">University of Texas at San Antonio</h4></td>
+          <td><h4 class=""><b>University of Texas at San Antonio</b></h4></td>
           <td><img class="rrpic" src="./public/unnamed.jpg" alt="shit is broken"/></td>
         </tr>
         <tr>
           <td>
-            <span class="edupadding">Bachelor's in Computer Science </span>
-            <span class="edupadding2"> December 2020</span>
+            <span class="">Bachelor's in Computer Science </span>
+            <br>
+            <span class=""> December 2020</span>
           </td>
         </tr>
       </table>
@@ -108,7 +117,7 @@
   </section>
 
 </header>
-
+<hr>
 <header id="portfolio" class="">
 <div class="need">
   <h1 class="left">Projects</h1>
@@ -116,18 +125,37 @@
   <script>ScrollReveal().reveal('.need')</script>
 
   <br></br>
-<div id="hahawhat">
-  <table class="toolsused">
-    <tr >
-      <td><img class="pic1" src="./public/potty.png" alt="shit is broken"/></td>
-      <td class="tablepad"><h1 class="boxcolor">PottyPicker <a href="https://github.com/dannydoan43/PotTYpicker" target="_blank" ><img src="./public/github.png" class="githubpadding"/> </a></h1> <p class="pottytext">is a JavaFX application that makes use of the JavaMail API. Students are able to email janitorial staff which bathrooms are the best/worst. </p></td>
-    </tr>
-    <br></br><br></br><br></br>
-    <tr class="tablepadding">
-      <td><img class="digits" src="./public/digitrec.png" alt="here we go again"/></td>
-      <td class="tablepad"> <h1 class="boxcolor">Digital Recognition <a href="https://github.com" target="_blank" ><img src="./public/github.png" class="githubpadding"/> </a></h1> <p class="pottytext">is a machine learning project done in Python that uses numpy, pandas, keras, tensorflow and matplotlib with the MNIST handwritten digit dataset.</p></td>
-    </tr>
-  </table>
+<div class="container2">
+  <br>
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active" ></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="" src="./public/potty.png" alt="shit is broken" style=""/>
+        <div class="carousel-caption" style="padding-left:47%;color:black">
+          <h3>PottyPicker<a href="https://github.com/dannydoan43/PotTYpicker" target="_blank" ><img src="./public/github.png" class="githubpadding" style="display:inline-block;"/> </a></h3>
+          <p>is a JavaFX application that makes use of the JavaMail API. Students are able to email janitorial staff which bathrooms are the best/worst.</p>
+        </div>
+      </div>
+
+      <div class="item" >
+        <img class="" src="./public/digitrec.png" alt="here we go again"/>
+        <div class="carousel-caption" style="padding-left:30%;">
+          <h3 style="padding-left:50%;color:black">RECOGNIZER<a href="https://github.com" target="_blank" ><img src="./public/github.png" class="githubpadding"/> </a></h3>
+          <p style="padding-left:50%;color:black">is a machine learning project done in Python that uses numpy, pandas, keras, tensorflow and matplotlib with the MNIST handwritten digit dataset.</p>
+        </div>
+      </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span></span>
+    </a>
+  </div>
 </div>
+
 </header>
+</body>
 </html>
