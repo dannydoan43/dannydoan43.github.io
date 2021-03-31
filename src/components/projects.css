@@ -1,0 +1,66 @@
+.left {
+    text-align: left;
+    padding-left: 1%;
+}
+.textpadding {
+    padding-left:30%;
+}
+.tablepadding {
+    padding-top:10%;
+}
+.pic1 {
+    max-height: 30em;
+    padding-left:30%;
+    z-index:-1;
+}
+.boxcolor {
+    background-color:lightblue;
+    padding-left:10%;
+    z-index:10;
+    text-align: left;
+}
+.githubpadding {
+    padding-top:1%;
+    padding-left:5%;
+}
+
+.pottytext {
+    text-align: justify;
+    text-justify: inter-word;
+    padding-left:10%;
+    padding-right:10%;
+}
+.tablepad {
+    padding-left:15%;
+    padding-right:5%;
+}
+.digits {
+    max-height:30em;
+    padding-left:25%;
+}
+.round-button {
+    display:inline-block;
+    width:75px;
+    height:75px;
+    line-height:80px;
+    border: 2px solid #f5f5f5;
+    border-radius: 50%;
+    color:#f5f5f5;
+    text-align:center;
+    text-decoration:none;
+    background: #555777;
+    box-shadow: 0 0 3px gray;
+    font-size:20px;
+    font-weight:bold;
+}
+.round-button:hover {
+    background: #777555;
+}
+.toolsused {
+    max-width: 100%;
+}
+
+
+body {
+    margin: 0
+}
