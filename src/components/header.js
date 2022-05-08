@@ -13,7 +13,7 @@ export default class Header extends Component {
                             <ul className="headerright">
                                 <li className="helpme"><a className="smoothscroll rmunder" href="mailto:dannydoan43@gmail.com">Contact</a></li>
                                 <li className="helpme"><a href="#about" className="rmunder">About Me</a></li>
-                                <li className="helpme"><a href="DannyDoan_Resume.pdf" target="_blank" className="button1">Résumé</a></li>
+                                <li className="helpme"><a href="DDresume.pdf" target="_blank" className="button1">Résumé</a></li>
                                 <li className="helpme"><a href="#portfolio" className="rmunder">Projects</a></li>
                             </ul>
                             </div>
